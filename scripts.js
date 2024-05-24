@@ -1,9 +1,24 @@
 // A list of provinces:
-const provinces = ['Western Cape', 'Gauteng', 'Northern Cape', 'Eastern Cape', 'KwaZulu-Natal', 'Free State']
+const provinces = [
+  'Western Cape', 
+  'Gauteng', 
+  'Northern Cape', 
+  'Eastern Cape', 
+  'KwaZulu-Natal', 
+  'Free State'
+]
 
 // A list of names:
-const names = ['Ashwin', 'Sibongile', 'Jan-Hendrik', 'Sifso', 'Shailen', 'Frikkie']
+const names = [
+  'Ashwin', 
+  'Sibongile', 
+  'Jan-Hendrik', 
+  'Sifso', 
+  'Shailen', 
+  'Frikkie'
+]
 
+/*       EXERCISES       */
 
 //1. forEach Basics:
 // log each name to the console 
