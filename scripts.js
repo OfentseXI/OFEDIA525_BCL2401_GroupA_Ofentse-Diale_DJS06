@@ -40,8 +40,12 @@ console.log(nameLengths);
 
 //4. Sorting
 //Use spread operator to avoid mutating the original array
-const sortedProvinces = [...provinces].sort(); //Use spread operator to avoid mutating the original array
+const sortedProvinces = [...provinces].sort();
 console.log(sortedProvinces);
 
+//5. Filtering for cape
+const nonCapeProvinces = provinces.filter(
+  (province) => !province.includes("Cape")
+);
 
 
