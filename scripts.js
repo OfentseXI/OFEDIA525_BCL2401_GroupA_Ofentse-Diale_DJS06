@@ -89,8 +89,25 @@ concatenatedProductNames: products.reduce(
   (acc, product) => acc + product.product,""
 ),
 
-//5.
+//5.Find Extremes in Prices
+// Identify the highest and lowest-priced items & returns a string
+priceExtremes: (() => {
+  const validProducts = products.filter(
+    (item) => !isNaN(item.price) && item.price !== "" && item.price !== " "
+  );
+  const prices = validProducts.map((item) => Number(item.price));
+
+  const highestPricedItem = validProducts.find(
+    (item) => Number(item.price) === Math.max(...prices)
+  );
+  const lowestPricedItem = validProducts.find(
+    (item) => Number(item.price) === Math.min(...prices)
+  );
+
+  return `Highest: ${highestPricedItem.product}. Lowest: ${lowestPricedItem.product}.`;
+})(),
 
 //6. 
 
 }
+console.log(productsData)
