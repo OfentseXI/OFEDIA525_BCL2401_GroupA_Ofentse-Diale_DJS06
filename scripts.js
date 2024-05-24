@@ -49,4 +49,7 @@ const nonCapeProvinces = provinces.filter(
 );
 console.log(nonCapeProvinces.length);
 
+//6. Finding "S"
+const containsS = names.map((name) => name.includes("S") || name.includes("s"));
+console.log(containsS);
 
