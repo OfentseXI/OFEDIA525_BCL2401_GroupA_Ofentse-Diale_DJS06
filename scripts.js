@@ -107,7 +107,17 @@ priceExtremes: (() => {
   return `Highest: ${highestPricedItem.product}. Lowest: ${lowestPricedItem.product}.`;
 })(),
 
-//6. 
+//6. Object Transformation
+// Recreate the products object with keys 'name' and 'cost' with their original values.
+transformedProducts: products.reduce((acc, product) => {
+  acc.push({
+    name: product.product,
+    cost: isNaN(parseInt(product.price)) ? 0 : parseInt(product.price),
+  });
+  return acc;
+}, 
+// Wraps it in an array
+[]), 
+};
 
-}
-console.log(productsData)
+console.log(productsData);
