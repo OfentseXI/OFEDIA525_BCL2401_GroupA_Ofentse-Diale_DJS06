@@ -83,7 +83,11 @@ totalPrice: products
   return acc;
 }, 0),
 
-//4.
+//4.Concatenating of Product Names
+// Concatenates all product names into a single string.
+concatenatedProductNames: products.reduce(
+  (acc, product) => acc + product.product,""
+),
 
 //5.
 
