@@ -74,7 +74,14 @@ productsFilteredByNameLength: products
 .filter((name) => name.product.length <= 5)
 .map((name) => name.product),
 
-//3.
+//3.Price Manipulation
+// Filters out products without prices, converts string prices to numbers & calculates the total price.
+totalPrice: products
+.filter((product) => product.price && product.price !== " ") // Filter products with prices
+.reduce((acc, product) => {
+  acc += parseInt(product.price); // Convert price to number and add to accumulator
+  return acc;
+}, 0),
 
 //4.
 
