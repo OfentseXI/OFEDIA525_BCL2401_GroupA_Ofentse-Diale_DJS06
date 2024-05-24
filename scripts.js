@@ -21,7 +21,7 @@ names.forEach((name) => {
 });
 
 // log each province to the console
-names.forEach((province) => {
+provinces.forEach((province) => {
   console.log(province)
 });
 
@@ -29,4 +29,7 @@ names.forEach((province) => {
 names.forEach((name, index) => {
   console.log(`${name} (${provinces[index]})`);
 });
+
+
+
 
